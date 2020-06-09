@@ -2,3 +2,4 @@ node_modules
 *.hfst
 *.lexc
 *.bz2
+hfst

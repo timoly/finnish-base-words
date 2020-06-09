@@ -17,11 +17,8 @@ const getBaseForm = (word): Promise<string[]> => {
         }
         const baseWords: string = splitted[1].split("<")[0].replace(/-/g, '')
         const combined = baseWords.replace(/#/g, '')
-        const separated = baseWords.replace(/#/g, ' ').split(' ')
-        const all = [...new Set(separated.concat(combined).filter(Boolean))]
-
-        console.log("word", word, baseWords, all, stdout)
-        resolve(all)
+        console.log("word", word, baseWords, combined, stdout)
+        resolve([combined])
       }
     })
   })
