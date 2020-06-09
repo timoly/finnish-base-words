@@ -9,6 +9,7 @@ This is done with a node script using hfst cli tool in background.
   - wget http://hfst.github.io/downloads/finntreebank.lexc
   - tar zxf hfst-latest.tar.bz2
   - ./hfst/bin/hfst-lexc -v -f foma finntreebank.lexc -o finntreebank.inverted.hfst
+  - use osx security & privacy > general to allow unsigned 3rd party app executions
   - ./hfst/bin/hfst-invert -v finntreebank.inverted.hfst -o finntreebank.debug.hfst
   - ./hfst/bin/hfst-fst2fst -v finntreebank.debug.hfst -f olw -o finntreebank.hfst
   - npm start
