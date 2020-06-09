@@ -1,0 +1,1 @@
+export const segmentNames = [{"fi":"suomalainen voicroissantit tomaatit xbox suomalainen voi croissant voicroissant tomaatti"}]
